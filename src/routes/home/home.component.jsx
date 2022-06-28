@@ -1,8 +1,12 @@
 import Category from "../../components/categories/categories.component";
+import { Outlet } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <Category />
+    <div>
+      <Category />
+      <Outlet />
+    </div>
   );
 }
 
